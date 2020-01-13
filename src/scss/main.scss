@@ -1,0 +1,81 @@
+/****************
+GLOBALS
+****************/
+@mixin app-flex($align, $justify, $direction-wrap) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+  flex-flow: $direction-wrap;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+
+button {
+  outline: none;
+  border: none;
+  padding: 0.5rem 2rem;
+  @include app-flex(center, center, row nowrap);
+  font-size: 0.9rem;
+  font-weight: 500;
+}
+
+.game-chip {
+  width: 90px;
+  @include app-flex(center, center, row nowrap);
+  height: 25px;
+  margin: 0.5rem;
+  border-radius: 2px;
+  font-size: 0.8rem;
+}
+/****************
+BACKGROUND & TEXT
+****************/
+.bg\(black\) {
+  background-color: black;
+}
+.bg\(red\) {
+  background-color: red;
+}
+.t\(white\) {
+  color: white;
+}
+
+/****************
+CURSORS
+****************/
+.cursor\(crosshair\) {
+   cursor: crosshair;
+ }
+.cursor\(pointer\) {
+  cursor: pointer;
+}
+
+/****************
+FLEX
+****************/
+@mixin app-flex($align, $justify, $direction-wrap) {
+  display: flex;
+  align-items: $align;
+  justify-content: $justify;
+  flex-flow: $direction-wrap;
+}
+
+.stats-board {
+  @include app-flex(center, flex-start, row nowrap);
+  height: 30px;
+}
+
+.non-playing-container {
+  height: 100vh;
+  @include app-flex(center, center, column wrap);
+}
+
+/****************
+MARGIN & PADDING
+****************/
+.pb\(1\) {
+  padding-bottom: 1rem;
+}
