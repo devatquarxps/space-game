@@ -16,8 +16,8 @@ npm run build
 ```
 
 ## Game overview
-```
 [Demo Link](https://space-game-fb8cc.firebaseapp.com)
+```
 Key concepts:
 The game is built using html canvas element representing the space and the mouse cursor representing the spaceship
 
