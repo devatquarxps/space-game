@@ -17,8 +17,8 @@ npm run build
 
 ## Game overview
 ```
-Key concepts:
 [Demo Link](https://space-game-fb8cc.firebaseapp.com)
+Key concepts:
 The game is built using html canvas element representing the space and the mouse cursor representing the spaceship
 
 Astroids:
